@@ -1,0 +1,81 @@
+
+body{
+	font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.logo{
+	position: fixed;
+	top: 0;
+	width: 40px;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	background-color: dodgerblue;
+}
+
+.menuTagDiv{
+	padding: 5px;
+	z-index: 999;
+	left: 45px;
+	color: white;
+	height: 20px;
+	font-size: 16px;
+	line-height: 20px;
+	position: fixed;
+	display: none;
+	top: 0;
+	background-color: #333333;
+	opacity: 0;
+	border-radius: 8px;
+	box-shadow: 0 0 10px #333333;
+}
+
+.menuDiv{
+	box-shadow: 1px 0px 15px  #333333;
+	position: fixed;
+	overflow: hidden;
+	padding-top: 40px;
+	z-index: 1;
+	width: 40px;
+	height: 1000px;
+	background-color: #333333;
+}
+
+.menuItemContainer{
+	width:40px;
+	height: 50px;
+}
+
+.menuItem{
+	border-radius: 5px;
+	margin: 12px 2px 2px 2px;
+	padding: 2px;
+	border: solid 1px white;
+	width: 30px;
+	height:30px;
+}
+
+.leftDiv{
+	background-color: #dddddd;
+	background-size: auto 120%;
+	padding-left: 40px;
+	position: fixed;
+	width: 30%;
+	height: 1000px;
+}
+.bgimg{
+	height: auto;
+	width: 100%;
+}
+.rightDiv{
+	margin-left: 30%;
+	padding-left: 40px;
+	width: 60%;
+	height: 1000px;
+	background-color: #FFFFFF;
+	
+}
