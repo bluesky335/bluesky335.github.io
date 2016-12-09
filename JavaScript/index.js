@@ -18,6 +18,22 @@ $(function(){
 	}).mouseout(function(){
 		$(this).stop().animate({"width":70,"height":70,"border-radius":35,"margin":10},100);
 	});
+	
+	 var images = new Array()
+            function preload() {
+                for (i = 0; i < preload.arguments.length; i++) {
+                    images[i] = new Image()
+                    images[i].src = preload.arguments[i]
+                }
+            }
+            preload(
+                "./images/1.jpg",
+                "./images/2.jpg",
+                "./images/3.jpg",
+                "./images/4.jpg",
+                "./images/5.jpg"
+            )
+	
 });
 
 $(window).resize(function(){
