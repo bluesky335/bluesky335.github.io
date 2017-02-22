@@ -1,4 +1,4 @@
-var imgindex = 2;
+var imgindex = 1;
 var imagesArray = [
     "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1487670708913&di=0e7830941d4a0cb263eae324b45ac811&imgtype=0&src=http%3A%2F%2Fimage103.360doc.com%2FDownloadImg%2F2017%2F02%2F2017%2F91918399_6.jpg",
     "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488266058&di=fa4421e68e00ebf48454fdc514e1b039&imgtype=jpg&er=1&src=http%3A%2F%2Fimage65.360doc.com%2FDownloadImg%2F2013%2F10%2F0712%2F35698035_25.jpg",
@@ -7,6 +7,9 @@ var imagesArray = [
     "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1487671378128&di=00e4ca2efe3cf4f33039cb18c5701fd0&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201504%2F26%2F194420sdovlw1emrvq11dl.jpg"
 ];
 $(function() {
+    
+    $("#bg1").css({ "background-image": "url("+imagesArray[0]+")" });
+    $("#bg2").css({ "background-image": "url("+imagesArray[1]+")" });
     var timer = setInterval(function() {
         $("#bg1").animate({ "opacity": 0 }, 1500, function() {
             $("#bg1").css({ "background-image": "url("+imagesArray[imgindex]+")" });
