@@ -11,9 +11,24 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" href="css/index.css" />
 	</head>
- 
+
 		<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 		<script src="JavaScript/index.js"></script>
+		<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 	<body>
 		<div id="bg2">
 			<div id="bg1">
@@ -32,10 +47,10 @@
 				<div><br />
 					<a href="http://blog.liuwanlin.tk" >
 						<img class="link" src="images/blog.png" />
-					</a> 
+					</a>
 					<a href="https://github.com/bluesky335/" target="_blank" >
 						<img class="link" src="images/github.png" />
-					</a> 
+					</a>
 					<a href="http://space.bilibili.com/4200969/"  target="_blank">
 						<img class="link" src="images/bilibili.png" />
 					</a>
