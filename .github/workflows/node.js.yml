@@ -13,9 +13,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    defaults:
-      run: 
-        working-directory: './bluesky335.github.io/'
     strategy:
       matrix:
         node-version: [18.x]
@@ -30,12 +27,13 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: './bluesky335.github.io/package-lock.json'
+        cache-dependency-path: './package-lock.json'
     - run: npm ci
     - run: npm run build --if-present
+    - run: cp ./dist/index.html ./dist/404.html
     - uses: actions/upload-pages-artifact@v1
       with:
-        path: './bluesky335.github.io/dist'
+        path: './dist'
   
    # Deploy job
   deploy:
