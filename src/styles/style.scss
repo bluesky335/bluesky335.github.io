@@ -1,7 +1,10 @@
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family:bit-font, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  line-height: 1.2;
   font-weight: 400;
+  font-size: 15px;
 
   color-scheme: light dark;
   color: #ffffffde;
@@ -14,6 +17,8 @@
   -webkit-text-size-adjust: 100%;
 
   --nav-bar-height: 50px;
+  --nav-bar-text-color: white;
+  --nav-bar-background-color: rgba(0, 0, 0, 0.3);
 
   --background-color: #242424;
   --main-text-color: white;
@@ -23,7 +28,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #307fff;
   text-decoration: inherit;
 }
 
@@ -69,6 +74,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+input {
+  font-family: inherit;
+}
+
 #app {
   background-color: #1a1a1a;
   text-align: center;
@@ -97,3 +106,6 @@ button:focus-visible {
     background-color: white;
   }
 }
+
+@import './transition.scss';
+@import './public.scss';

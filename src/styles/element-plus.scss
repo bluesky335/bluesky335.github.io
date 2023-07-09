@@ -1,0 +1,13 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #409eff,
+    ),
+  ),
+  $font-family: (
+    '': 'bit-font',
+  ),
+  $bg-color: (
+    '': var(--background-color),
+  )
+);
