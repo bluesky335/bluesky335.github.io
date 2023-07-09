@@ -24,4 +24,11 @@ export default {
       Toaster: 'A toaster library for iOS written in Swift.',
     },
   },
+  privacyPolicy: {
+    codeScanner: {
+      title: 'Code Scanner - Privacy policy',
+      detail:
+        'Code Scanner will not collect any of your information, and will not upload the barcode and QR code content you scanned.',
+    },
+  },
 };
