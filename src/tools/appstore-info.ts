@@ -1,24 +1,4 @@
 import i18n from '@/i18n';
-import axios from 'axios';
-
-async function getAppStoreAppInfoFromUrl(url: string) {
-  const result = await axios.get(url);
-  if (result.status === 200) {
-    return result.data;
-  } else {
-    throw new Error(result.data);
-  }
-}
-
-export async function getAppStoreAppInfo(id: string) {
-  if (/\d+/.test(id)) {
-    return await getAppStoreAppInfoFromUrl(
-      `https://itunes.apple.com/lookup?id=${id}`,
-    );
-  } else {
-    throw new Error('Invalid app ID');
-  }
-}
 
 export async function getAppListForDeveloper(name: string): Promise<any> {
   const str = encodeURI(name);

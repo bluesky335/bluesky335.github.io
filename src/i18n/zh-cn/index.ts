@@ -23,4 +23,11 @@ export default {
       Toaster: '一个纯Swift实现的iOS端的 Toast 库',
     },
   },
+  privacyPolicy: {
+    codeScanner: {
+      title: '二维码扫码器-隐私政策',
+      detail:
+        '「二维码扫码器」不会收集您的任何信息，更不会上传您扫描到的条码和二维码内容，请放心使用。',
+    },
+  },
 };
