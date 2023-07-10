@@ -1,25 +1,31 @@
 <template>
   <div>
     <div>
-      <ImageCover :title="$t('openSource.title')" :dimming="0">
+      <ImageCover
+        :title="$t('openSource.title')"
+        :dimming="0"
+        :bg-random-seed="200">
         <IconGithub width="62px" height="62px" />
       </ImageCover>
     </div>
     <div class="repo-list">
-      <div v-for="repo in repositoryList" :key="repo.path" class="repo-item">
+      <div v-for="repo in repositoryList" :key="repo.repo" class="repo-item">
         <div class="repo-title">
-          <IconGithub />
           <a
             class="repo-name"
-            :href="`https://github.com${repo.path}`"
+            :href="`https://github.com/bluesky335/${repo.repo}`"
             target="_blank">
             {{ repo.name }}
           </a>
+          <iframe
+            :src="`https://ghbtns.com/github-btn.html?user=bluesky335&repo=${repo.repo}&type=star&count=true&size=large`"
+            frameborder="0"
+            scrolling="0"
+            width="300"
+            height="30"
+            title="GitHub"></iframe>
         </div>
         <div class="repo-info">
-          <object
-            :data="`https://img.shields.io/github/stars${repo.path}.svg`"
-            type="" />
           <span>
             {{ $t('openSource.language') }}:
             <span
@@ -28,10 +34,11 @@
               {{ repo.language }}
             </span>
           </span>
+          <span> </span>
         </div>
-        <el-text class="description" size="large">{{
-          $t(repo.description)
-        }}</el-text>
+        <el-text class="description" size="large">
+          {{ $t(repo.description) }}
+        </el-text>
         <el-divider></el-divider>
       </div>
     </div>
@@ -41,8 +48,7 @@
 import IconGithub from '@/assets/icon/ic-github.svg';
 interface Repo {
   name: string;
-  path: string;
-  platform?: string;
+  repo: string;
   language: string;
   description: string;
   languageColor: string;
@@ -50,14 +56,14 @@ interface Repo {
 const repositoryList: Repo[] = [
   {
     name: 'IDCheck',
-    path: '/bluesky335/IDCheck',
+    repo: 'IDCheck',
     language: 'Go',
     description: 'openSource.description.idCheck',
     languageColor: 'rgb(75, 171, 212)',
   },
   {
     name: 'Toaster',
-    path: '/bluesky335/Toaster',
+    repo: 'Toaster',
     language: 'Swift',
     description: 'openSource.description.Toaster',
     languageColor: 'rgb(223, 92, 68)',
