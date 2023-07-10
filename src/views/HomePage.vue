@@ -81,7 +81,7 @@ import ImageCover from '@/components/ImageCover.vue';
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 15px;
+    padding: 15px 0;
     font-size: 30px;
   }
 }
@@ -141,6 +141,10 @@ import ImageCover from '@/components/ImageCover.vue';
 }
 
 @media screen and (max-width: 750px) {
+  .blog {
+    padding-top: 70px;
+  }
+
   .social-media {
     flex-direction: column;
     .media-item {

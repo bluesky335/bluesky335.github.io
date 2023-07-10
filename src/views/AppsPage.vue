@@ -1,6 +1,10 @@
 <template>
   <div>
-    <ImageCover class="cover" :title="$t('apps.title')" :dimming="0">
+    <ImageCover
+      class="cover"
+      :title="$t('apps.title')"
+      :dimming="0"
+      :bg-random-seed="1000">
       <icon-android width="90" />
     </ImageCover>
     <AppListForDeveloper class="app-list"></AppListForDeveloper>
