@@ -1,3 +1,5 @@
+@use './transition.scss' as *;
+@use './public.scss' as *;
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -106,6 +108,3 @@ input {
     background-color: white;
   }
 }
-
-@import './transition.scss';
-@import './public.scss';

@@ -81,11 +81,8 @@ const repositoryList: Repo[] = [
   width: calc(100% - 40px);
   height: 45vh;
   color: white;
-  background: linear-gradient(
-      117deg,
-      rgb(189, 255, 248),
-      rgba(189, 195, 235, 0) 70%
-    ),
+  background:
+    linear-gradient(117deg, rgb(189, 255, 248), rgba(189, 195, 235, 0) 70%),
     linear-gradient(207deg, rgb(180, 190, 255), rgba(189, 195, 235, 0) 70%),
     linear-gradient(297deg, rgb(138, 185, 255), rgba(189, 195, 235, 0) 70%);
 }
@@ -128,11 +125,8 @@ const repositoryList: Repo[] = [
 
 @media (prefers-color-scheme: dark) {
   .image-cover {
-    background: linear-gradient(
-        117deg,
-        rgb(80, 152, 145),
-        rgba(189, 195, 235, 0) 70%
-      ),
+    background:
+      linear-gradient(117deg, rgb(80, 152, 145), rgba(189, 195, 235, 0) 70%),
       linear-gradient(207deg, rgb(71, 58, 131), rgba(189, 195, 235, 0) 70%),
       linear-gradient(300deg, rgb(46, 76, 121), rgba(189, 195, 235, 0) 70%);
   }

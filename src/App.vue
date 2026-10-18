@@ -77,13 +77,8 @@
     </div>
     <div class="icp-info">
       <a href="https://beian.miit.gov.cn/">
-        <img src="@/assets/icon/ic-icp.png" alt="渝ICP备17004401号-3" />
-        渝ICP备17004401号-3
-      </a>
-
-      <a href="https://beian.miit.gov.cn/">
-        <img src="@/assets/icon/ic-gongan.png" alt="渝ICP备17004401号-3" />
-        渝ICP备17004401号-3
+        <img src="@/assets/icon/ic-icp.png" alt="渝ICP备2025050752号" />
+        渝ICP备2025050752号
       </a>
     </div>
   </el-config-provider>
@@ -97,8 +92,8 @@ import IconTranslate from '@/assets/icon/ic-translate.svg';
 import IconAndroid from '@/assets/icon/ic-android.svg';
 import { computed, ref } from 'vue';
 import i18n from './i18n';
-import { zhCn } from 'element-plus/lib/locale/index.js';
-import { en } from 'element-plus/lib/locale/index.js';
+import zhCn from 'element-plus/es/locale/lang/zh-cn';
+import en from 'element-plus/es/locale/lang/en';
 
 const menuDrawer = ref(false);
 

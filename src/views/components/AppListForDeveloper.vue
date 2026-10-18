@@ -12,12 +12,13 @@ import { ref } from 'vue';
 import iOSAppCard from './iOSAppCard.vue';
 import { onMounted } from 'vue';
 import { getAppListForDeveloper } from '@/tools/appstore-info';
+import type { AppStoreApp } from '@/tools/appstore-info';
 import { useI18n } from 'vue-i18n';
 import { watch } from 'vue';
 
 const i18n = useI18n();
 const loading = ref(false);
-const appList = ref<any[]>([]);
+const appList = ref<AppStoreApp[]>([]);
 const loadAppList = async () => {
   loading.value = true;
   try {

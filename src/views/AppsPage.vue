@@ -25,11 +25,8 @@ import AppListForDeveloper from './components/AppListForDeveloper.vue';
   width: calc(100% - 40px);
   height: 45vh;
   color: white;
-  background: linear-gradient(
-      117deg,
-      rgba(201, 179, 236, 1),
-      rgba(189, 195, 235, 0) 70%
-    ),
+  background:
+    linear-gradient(117deg, rgba(201, 179, 236, 1), rgba(189, 195, 235, 0) 70%),
     linear-gradient(207deg, rgba(234, 184, 220, 1), rgba(189, 195, 235, 0) 70%),
     linear-gradient(297deg, rgba(138, 185, 255, 1), rgba(189, 195, 235, 0) 70%);
 }
@@ -42,11 +39,8 @@ import AppListForDeveloper from './components/AppListForDeveloper.vue';
 
 @media (prefers-color-scheme: dark) {
   .cover {
-    background: linear-gradient(
-        117deg,
-        rgb(116, 95, 148),
-        rgba(189, 195, 235, 0) 70%
-      ),
+    background:
+      linear-gradient(117deg, rgb(116, 95, 148), rgba(189, 195, 235, 0) 70%),
       linear-gradient(207deg, rgb(137, 82, 121), rgba(189, 195, 235, 0) 70%),
       linear-gradient(297deg, rgb(46, 80, 132), rgba(189, 195, 235, 0) 70%);
   }

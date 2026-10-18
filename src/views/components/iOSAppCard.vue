@@ -21,8 +21,9 @@
 </template>
 <script lang="ts" setup>
 import IconApple from '@/assets/icon/ic-apple.svg';
+import type { AppStoreApp } from '@/tools/appstore-info';
 interface Props {
-  app: any;
+  app: AppStoreApp;
 }
 defineProps<Props>();
 </script>
